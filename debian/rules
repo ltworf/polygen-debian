@@ -1,0 +1,67 @@
+#!/usr/bin/make -f
+
+OCAMLABI=$(shell ocamlc -version)
+DEB_DH_GENCONTROL_ARGS = -- -VF:OCamlABI="$(OCAMLABI)"
+
+POLYGEN_BASE=.
+DEB_BUILDDIR=$(POLYGEN_BASE)/src
+POLYGEN=$(DEB_BUILDDIR)/polygen
+export POLYGEN
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/class/makefile.mk
+include /usr/share/cdbs/1/rules/simple-patchsys.mk
+
+# set $(NATIVE) to true if this arch has an optimising compiler
+#NATIVE := $(shell test -x /usr/bin/ocamlopt.opt && echo true || echo false)
+# Forcing native to false to have a Architecture: all package, since polygen
+# doesn't have special optimization requirements
+NATIVE := false
+
+# No toplevel makefile: we'll add a -C to the make invocation
+#DEB_MAKE_BUILD_TARGET+="-Csrc"
+
+# If we have the optimising compiler, build natively with debugging because
+# we can strip it later. if we don't, disable debugging because stripping
+# the non-native binaries removes the bytecode and leaves you with the
+# interpreter, and a somewhat useless binary... =)
+
+DEB_MAKE_BUILD_TARGET+="NATIVE=$(NATIVE)"
+DEB_STRIP_EXCLUDE+=polygen
+
+#ifeq ($(NATIVE), true)
+#DEB_MAKE_BUILD_TARGET+="MLC=ocamlopt"
+#else
+#DEB_MAKE_BUILD_TARGET+="MLC=ocamlc"
+#DEB_MAKE_BUILD_TARGET+="MLCOPTS=-unsafe"
+#DEB_MAKE_BUILD_TARGET+="MLLDOPTS=unix.cma"
+#DEB_STRIP_EXCLUDE+=polygen
+#endif
+
+# Hook in the build system the creation of the manpage
+# Invoking polygen to extract the metadata from the grammars will also generate
+# the .grm.o files, that we can later install.
+build/polygen::
+	$(POLYGEN) debian/man.grm > polygen.1
+	chmod 0755 debian/make_polygen-data_manpage
+	find $(POLYGEN_BASE)/grm/ -name \*.grm | debian/make_polygen-data_manpage > polygen-data.6
+
+install/polygen::
+	install -o root -g root -m 755 $(POLYGEN) debian/$(cdbs_curpkg)/usr/bin/
+	install -o root -g root -m 755 -d debian/$(cdbs_curpkg)/usr/share/doc/polygen
+	install -o root -g root -m 644 $(POLYGEN_BASE)/eng/HOWTO-Refman.html debian/$(cdbs_curpkg)/usr/share/doc/polygen/HOWTO-Refman.en.html
+	install -o root -g root -m 644 $(POLYGEN_BASE)/ita/HOWTO-Refman.html debian/$(cdbs_curpkg)/usr/share/doc/polygen/HOWTO-Refman.it.html
+	install -o root -g root -m 644 $(POLYGEN_BASE)/README debian/$(cdbs_curpkg)/usr/share/doc/polygen/README
+	install -o root -g root -m 644 $(POLYGEN_BASE)/Credits debian/$(cdbs_curpkg)/usr/share/doc/polygen/Credits
+
+install/polygen-data::
+	# grammar data files
+	for lang in eng ita fra ;\
+	do \
+		install -o root -g root -m 755 -d debian/$(cdbs_curpkg)/usr/share/polygen/$$lang/ ;\
+		find $(POLYGEN_BASE)/grm/$$lang/ -iname '*.grm*' -exec \
+			install -o root -g root -m 644 '{}' debian/$(cdbs_curpkg)/usr/share/polygen/$$lang/ \;  ; \
+	done
+
+clean::
+	rm -f debian/man.grm.o polygen.1 polygen-data.6

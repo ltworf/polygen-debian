@@ -1,0 +1,42 @@
+--- src/main.ml	2004-06-25 11:58:00.000000000 +0200
++++ src/main.ml	2004-11-23 19:44:14.000000000 +0100
+@@ -119,6 +119,29 @@
+         msg "preprocessing grammar...";
+         Pre.pre decls0
+ 
++let find_grammar source =
++    if (Sys.file_exists(source)) then
++    	source
++    else if (Sys.file_exists(source^".grm")) then
++    	source^".grm"
++    else if (Sys.file_exists("/usr/share/polygen/"^source)) then
++        "/usr/share/polygen/"^source
++    else if (Sys.file_exists("/usr/share/polygen/"^source^".grm")) then
++        "/usr/share/polygen/"^source^".grm"
++    else if (Sys.file_exists("/usr/share/polygen/eng/"^source)) then
++        "/usr/share/polygen/eng/"^source
++    else if (Sys.file_exists("/usr/share/polygen/eng/"^source^".grm")) then
++        "/usr/share/polygen/eng/"^source^".grm"
++    else if (Sys.file_exists("/usr/share/polygen/fra/"^source)) then
++        "/usr/share/polygen/fra/"^source
++    else if (Sys.file_exists("/usr/share/polygen/fra/"^source^".grm")) then
++        "/usr/share/polygen/fra/"^source^".grm"
++    else if (Sys.file_exists("/usr/share/polygen/ita/"^source)) then
++        "/usr/share/polygen/ita/"^source
++    else if (Sys.file_exists("/usr/share/polygen/ita/"^source^".grm")) then
++        "/usr/share/polygen/ita/"^source^".grm"
++    else
++    	source
+ 
+ (* main *)
+ 
+@@ -132,6 +155,9 @@
+             fprintf !dest "%s\n" (Absyn1.pretty_decls "" (get_decls1 source))
+ 
+       | Generate ->
++            let source = (find_grammar source)
++	        in
++	    
+       		(* load complied or source grammar *)
+             let decls =
+             	try

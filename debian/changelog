@@ -1,0 +1,104 @@
+polygen (1.0.6.ds1-3) unstable; urgency=low
+
+  * Recompiled with ocaml 3.09.0-4, which broke dependencies once again but is
+    supposed to solve all dependency problems.  Closes: #348247.
+
+ -- Enrico Zini <enrico@debian.org>  Mon, 16 Jan 2006 21:52:49 +0100
+
+polygen (1.0.6.ds1-2) unstable; urgency=low
+
+  * Added new patch 05-8bit-strings.diff to make polygen accept UTF-8
+    strings.
+
+ -- Enrico Zini <enrico@debian.org>  Sat, 31 Dec 2005 11:41:01 +0800
+
+polygen (1.0.6.ds1-1) unstable; urgency=low
+
+  * Repackaged upstream .zip files, and added .ds1 to the version to mark this
+    Debian change to the upstream version.
+  * Updated build-deps to work with the new Ocaml, thanks to Julien Cristau.
+    Closes: #338049.
+  * New grammars from upstream.
+  * Fixed typo in description.  Closes: #306908.
+
+ -- Enrico Zini <enrico@debian.org>  Mon, 21 Nov 2005 21:06:32 +0100
+
+polygen (1.0.6-9) unstable; urgency=high
+
+  * Directly install the .grm.o files built at build time, and remove the need
+    for postinst and postrm.  It removes the annoying delays at install time,
+    and really closes: #325468.
+  * Urgency set to high since we close a security bug (hopefully for real this
+    time).
+  * Need a postinst to compensate for previously existing broken postrm from
+    previous polygens
+
+ -- Enrico Zini <enrico@debian.org>  Wed, 31 Aug 2005 13:34:20 +0200
+
+polygen (1.0.6-8) unstable; urgency=high
+
+  * Added a patch to honor umask when creating .grm.o files.
+    Closes: #325468.
+  * Urgency set to high since we close a security bug.
+  * Bumped Standards-version.
+
+ -- Enrico Zini <enrico@debian.org>  Mon, 29 Aug 2005 16:51:08 +0200
+
+polygen (1.0.6-7) unstable; urgency=high
+
+  * Make the polygen-data manpage build script executable before using it.
+    diff doesn't preserve permissions, so the +x bit is not kept while
+    packaging; that's a mismatch between how dpkg-buildpackage works and how
+    one would expect it to work.  Closes: #306113.
+  * Urgency is high because of the ongoing ocaml transition.
+
+ -- Enrico Zini <enrico@debian.org>  Sun, 24 Apr 2005 13:43:11 +0200
+
+polygen (1.0.6-6) unstable; urgency=low
+
+  * Autogenerate polygen-data manpage.  Closes: #301454.
+
+ -- Enrico Zini <enrico@debian.org>  Fri, 22 Apr 2005 02:29:30 +0200
+
+polygen (1.0.6-5) unstable; urgency=low
+
+  * Finally added README.Debian
+  * Changed Ocaml dependencies.  Closes: #300848.
+
+ -- Enrico Zini <enrico@debian.org>  Wed, 23 Mar 2005 23:21:24 +0100
+
+polygen (1.0.6-4) unstable; urgency=low
+
+  * Recommend polygen-data.  Closes: #288695.
+  * Fixed package description
+
+ -- Enrico Zini <enrico@debian.org>  Sun, 23 Jan 2005 15:47:19 +0800
+
+polygen (1.0.6-3) unstable; urgency=low
+
+  * Removed bashism in postinst
+  * Added postrm to get rid of precompiled grammar objects.  Closes: #284903.
+  * Depend on ocaml-base-nox | ocaml-base.  Closes: #284913.
+
+ -- Enrico Zini <enrico@debian.org>  Tue, 14 Dec 2004 00:39:11 +0800
+
+polygen (1.0.6-2) unstable; urgency=low
+
+  * Updated build-dependencies to include cdbs and unzip
+
+ -- Enrico Zini <enrico@debian.org>  Thu, 25 Nov 2004 23:27:19 +0100
+
+polygen (1.0.6-1) unstable; urgency=low
+
+  * Initial release.  Closes: #271804
+  * Added 3 patches:
+    01-dont-regenerate-existing-ofiles.diff
+      Don't try to regenerate precompiled grammars if they exist already
+    02-search-for-grammars.diff
+      Search for grammars in various obvious places if the file given as a
+      parameter is not found
+    03-makefile.diff
+      Fix the build system to correctly generate a bytecode arch-independent
+      executable
+
+ -- Enrico Zini <enrico@debian.org>  Tue, 23 Nov 2004 23:05:37 +0100
