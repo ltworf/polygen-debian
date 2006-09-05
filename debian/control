@@ -4,6 +4,7 @@ Priority: optional
 Maintainer: Enrico Zini <enrico@debian.org>
 Build-Depends-Indep: debhelper (>= 4.0.0), ocaml-nox, cdbs
 Standards-Version: 3.6.2.0
+XS-X-Vcs-Svn: svn://svn.debian.org/svn/pkg-ocaml-maint/trunk/packages/polygen
 
 Package: polygen
 Architecture: all
