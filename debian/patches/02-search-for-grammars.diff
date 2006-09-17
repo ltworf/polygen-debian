@@ -55,13 +55,11 @@ diff -Naur polygen-1.0.6.ds1/src/main.ml polygen-1.0.6.ds1.patched/src/main.ml
 +       with Not_found -> Some lang
 +     with Not_found -> None
 +   in
-+    if (Sys.file_exists(source)) then (
-+      prerr_endline "SAMEDIR none" ;
++    if (Sys.file_exists(source)) then
 +    	source
-+    ) else if (Sys.file_exists(source^".grm")) then (
-+      prerr_endline "SAMEDIRgrm none" ;
++    else if (Sys.file_exists(source^".grm")) then
 +    	source^".grm"
-+    ) else match lang with
++    else match lang with
 +    | Some s when Sys.file_exists ("/usr/share/polygen/"^s^"/"^source) -> (
 +        prerr_endline ("LANG1 "^s) ;
 +        "/usr/share/polygen/"^s^"/"^source
