@@ -1,7 +1,7 @@
-diff -Naur polygen-1.0.6.ds1/src/main.ml polygen-1.0.6.ds1.patched/src/main.ml
---- polygen-1.0.6.ds1/src/main.ml	2005-11-21 21:33:38.000000000 +0100
-+++ polygen-1.0.6.ds1.patched/src/main.ml	2006-09-17 13:12:15.238668750 +0200
-@@ -119,6 +119,78 @@
+diff -Naur polygen-1.0.6.ds2/src/main.ml polygen-1.0.6.ds2a/src/main.ml
+--- polygen-1.0.6.ds2/src/main.ml	2005-11-21 21:33:38.000000000 +0100
++++ polygen-1.0.6.ds2a/src/main.ml	2006-09-17 15:16:13.275517000 +0200
+@@ -119,6 +119,76 @@
          msg "preprocessing grammar...";
          Pre.pre decls0
  
@@ -78,7 +78,7 @@ diff -Naur polygen-1.0.6.ds1/src/main.ml polygen-1.0.6.ds1.patched/src/main.ml
  
  (* main *)
  
-@@ -132,6 +204,9 @@
+@@ -132,6 +202,9 @@
              fprintf !dest "%s\n" (Absyn1.pretty_decls "" (get_decls1 source))
  
        | Generate ->
@@ -88,4 +88,3 @@ diff -Naur polygen-1.0.6.ds1/src/main.ml polygen-1.0.6.ds1.patched/src/main.ml
        		(* load complied or source grammar *)
              let decls =
              	try
- 
