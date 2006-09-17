@@ -1,0 +1,22 @@
+#!/bin/sh -eu
+
+SRCDIR=$1
+DSTDIR=$2
+
+INSTALLDIR="install -o root -g root -m 755 -d"
+INSTALLFILE="install -o root -g root -m 644"
+
+# Create destination directories
+$INSTALLDIR $DSTDIR ;\
+find $SRCDIR -type d -printf "%P\n" | while read DIR
+do
+	$INSTALLDIR "$DSTDIR/$DIR"
+done
+
+# Scan source files and install them
+find $SRCDIR -type f -name "*.grm*" -printf "%P\n" | while read FILE
+do
+	$INSTALLFILE "$SRCDIR/$FILE" "$DSTDIR/$FILE"
+done
+
+exit 0

@@ -56,12 +56,9 @@ install/polygen::
 
 install/polygen-data::
 	# grammar data files
-	for lang in eng ita fra ;\
-	do \
-		install -o root -g root -m 755 -d debian/$(cdbs_curpkg)/usr/share/polygen/$$lang/ ;\
-		find $(POLYGEN_BASE)/grm/$$lang/ -iname '*.grm*' -exec \
-			install -o root -g root -m 644 '{}' debian/$(cdbs_curpkg)/usr/share/polygen/$$lang/ \;  ; \
-	done
+	debian/install-grammars $(POLYGEN_BASE)/grm/ita debian/$(cdbs_curpkg)/usr/share/polygen/it
+	debian/install-grammars $(POLYGEN_BASE)/grm/eng debian/$(cdbs_curpkg)/usr/share/polygen/en
+	debian/install-grammars $(POLYGEN_BASE)/grm/fra debian/$(cdbs_curpkg)/usr/share/polygen/fr
 
 clean::
 	rm -f debian/man.grm.o polygen.1 polygen-data.6
