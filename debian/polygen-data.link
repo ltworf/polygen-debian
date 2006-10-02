@@ -1,1 +1,2 @@
-/usr/bin/polyrun /usr/bin/polyfind
+usr/bin/polyrun usr/bin/polyfind
+usr/share/man/man1/polyrun.1 usr/share/man/man1/polyfind.1

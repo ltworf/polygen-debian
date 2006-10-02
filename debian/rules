@@ -46,9 +46,6 @@ build/polygen::
 	chmod 0755 debian/make_polygen-data_manpage
 	find $(POLYGEN_BASE)/grm/ -name \*.grm | debian/make_polygen-data_manpage > polygen-data.6
 
-build/polygen-data::
-	ln -s polyrun.1 debian/polyfind.1
-
 install/polygen::
 	install -o root -g root -m 755 $(POLYGEN) debian/$(cdbs_curpkg)/usr/bin/
 	install -o root -g root -m 755 -d debian/$(cdbs_curpkg)/usr/share/doc/polygen
@@ -66,4 +63,4 @@ install/polygen-data::
 	debian/install-grammars $(POLYGEN_BASE)/grm/fra debian/$(cdbs_curpkg)/usr/share/polygen/
 
 clean::
-	rm -f debian/man.grm.o polygen.1 polygen-data.6 polyfind.1
+	rm -f debian/man.grm.o polygen.1 polygen-data.6 debian/polyfind.1
