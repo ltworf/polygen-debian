@@ -34,7 +34,7 @@ Description: generator of random sentences from grammar definitions
 
 Package: polygen-data
 Architecture: all
-Depends: polygen
+Depends: polygen, perl-modules
 Description: grammar definitions for PolyGen
  PolyGen is a program for generating random sentences according to a grammar
  definition, that is following custom syntactical and lexical rules.
