@@ -58,9 +58,9 @@ install/polygen-data::
 	# grammar data files
 	install -o root -g root -m 755 debian/polyrun debian/$(cdbs_curpkg)/usr/bin/
 	chmod 0755 debian/install-grammars
-	debian/install-grammars $(POLYGEN_BASE)/grm/ita debian/$(cdbs_curpkg)/usr/share/polygen/
-	debian/install-grammars $(POLYGEN_BASE)/grm/eng debian/$(cdbs_curpkg)/usr/share/polygen/
-	debian/install-grammars $(POLYGEN_BASE)/grm/fra debian/$(cdbs_curpkg)/usr/share/polygen/
+	debian/install-grammars $(POLYGEN_BASE)/grm/ita debian/$(cdbs_curpkg)/usr/share/polygen/ita
+	debian/install-grammars $(POLYGEN_BASE)/grm/eng debian/$(cdbs_curpkg)/usr/share/polygen/eng
+	debian/install-grammars $(POLYGEN_BASE)/grm/fra debian/$(cdbs_curpkg)/usr/share/polygen/fra
 
 clean::
 	rm -f debian/man.grm.o polygen.1 polygen-data.6 debian/polyfind.1
