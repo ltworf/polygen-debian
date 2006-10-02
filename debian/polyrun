@@ -20,7 +20,7 @@ sub getlang ()
 	my $lang = $ENV{LC_MESSAGES};
 	$lang = $ENV{LANG} if not $lang;
 	$lang =~ s/_.+$//;
-	return undef if not exists $langmap{$lang};
+	return "eng" if not exists $langmap{$lang};
 	return $langmap{$lang};
 }
 
