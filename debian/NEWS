@@ -1,0 +1,18 @@
+polygen (1.0.6.ds2-1) unstable; urgency=low
+
+  In order to keep the polygen binary as close as possible to the one upstream
+  distributes, the Debian-specific extension that would have polygen look for
+  grammar candidates in /usr/share/polygen has been moved to a wrapper script
+  called polyrun.
+  
+  As a consequence, for most polygen invocations you should now use polyrun
+  instead of polygen.
+
+  To compensate you from the trouble of this change, this upload of polygen
+  finally ships in /usr/share/polygen/eng/debian the grammars from
+  http://people.debian.org/~enrico/polygen-debian.
+  
+  I extend you my apologies by way of "polyrun sorry", which you are invited
+  to run as many time as you like, to your full satisfaction :)
+
+ -- Enrico Zini <enrico@debian.org>  Mon,  2 Oct 2006 14:57:41 +0200
