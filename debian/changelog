@@ -3,6 +3,7 @@ polygen (1.0.6.ds2-1) unstable; urgency=low
   * Try to find grammars according to locales
   * Split grammar search into a separate polyrun script packaged in
     polygen-data
+  * Package Debian grammars in eng/debian
 
  -- Enrico Zini <enrico@debian.org>  Sun,  1 Oct 2006 14:20:31 +0200
 
