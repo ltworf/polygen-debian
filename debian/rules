@@ -64,3 +64,4 @@ install/polygen-data::
 
 clean::
 	rm -f debian/man.grm.o polygen.1 polygen-data.6 debian/polyfind.1
+	find $(POLYGEN_BASE)/grm/ -name \*.grm.o -exec rm "{}" ";"

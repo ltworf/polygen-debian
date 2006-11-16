@@ -1,8 +1,9 @@
 polygen (1.0.6.ds2-2) UNRELEASED; urgency=low
 
-  * Fixed a bashism in the makefile.  Closes: #396902.
+  * Fixed a bashism in the makefile.  Closes: bug#396902.
+  * Remove compiled grammar in debian/rules clean.  Closes: bug#397960.
 
- -- Enrico Zini <enrico@debian.org>  Thu, 16 Nov 2006 15:24:31 +0100
+ -- Enrico Zini <enrico@debian.org>  Thu, 16 Nov 2006 15:27:22 +0100
 
 polygen (1.0.6.ds2-1) unstable; urgency=low
 
