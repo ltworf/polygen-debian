@@ -1,0 +1,17 @@
+--- polygen-1.0.6.ds2/src/makefile	2005-11-21 21:33:38.000000000 +0100
++++ polygen-1.0.6.ds2/src/makefile	2006-11-16 15:22:25.959112500 +0100
+@@ -47,11 +47,9 @@
+ parser.mli parser.ml lexer.ml: lexer.mll parser.mly
+ 	$(MLLEX) lexer.mll
+ 	$(MLYACC) parser.mly
+-    # workaround for ocamlyacc "open" lack
+-	@mv parser.mli _parser.mli
+-	@echo -e "open Absyn\n" >parser.mli
+-	@cat <_parser.mli >>parser.mli
+-	@rm -f _parser.mli
++	# workaround for ocamlyacc "open" lack
++	(echo "open Absyn" ; echo ; cat parser.mli) > _parser.mli
++	@mv _parser.mli parser.mli
+ 
+ ver.ml: ver.ml.template
+ 	sed -e "s/%VERSION%/$(VERSION)/" -e "s/%DATE%/$(DATE)/" ver.ml.template >ver.ml

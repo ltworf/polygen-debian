@@ -1,3 +1,9 @@
+polygen (1.0.6.ds2-2) UNRELEASED; urgency=low
+
+  * Fixed a bashism in the makefile.  Closes: #396902.
+
+ -- Enrico Zini <enrico@debian.org>  Thu, 16 Nov 2006 15:24:31 +0100
+
 polygen (1.0.6.ds2-1) unstable; urgency=low
 
   * Try to find grammars according to locales
