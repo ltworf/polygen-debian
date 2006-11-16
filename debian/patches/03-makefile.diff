@@ -68,7 +68,13 @@
  	$(MLLEX) lexer.mll
  	$(MLYACC) parser.mly
 -    # workaround for ocamlyacc "open" lack
+-	@mv parser.mli _parser.mli
+-	@echo -e "open Absyn\n" >parser.mli
+-	@cat <_parser.mli >>parser.mli
+-	@rm -f _parser.mli
 +	# workaround for ocamlyacc "open" lack
- 	@mv parser.mli _parser.mli
- 	@echo -e "open Absyn\n" >parser.mli
- 	@cat <_parser.mli >>parser.mli
++	(echo "open Absyn" ; echo ; cat parser.mli) > _parser.mli
++	@mv _parser.mli parser.mli
+ 
+ ver.ml: ver.ml.template
+ 	sed -e "s/%VERSION%/$(VERSION)/" -e "s/%DATE%/$(DATE)/" ver.ml.template >ver.ml
