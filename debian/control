@@ -2,8 +2,9 @@ Source: polygen
 Section: games
 Priority: optional
 Maintainer: Enrico Zini <enrico@debian.org>
-Build-Depends-Indep: debhelper (>= 4.0.0), ocaml-nox, cdbs
-Standards-Version: 3.6.2.0
+Uploaders: Stefano Zacchiroli <zack@debian.org>
+Build-Depends: debhelper (>= 4.0.0), ocaml-nox, cdbs
+Standards-Version: 3.7.2
 XS-Vcs-Svn: svn://svn.debian.org/pkg-ocaml-maint/trunk/packages/polygen/trunk
 XS-Vcs-Browser: http://svn.debian.org/wsvn/pkg-ocaml-maint/trunk/packages/polygen/trunk/
 

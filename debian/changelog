@@ -1,3 +1,18 @@
+polygen (1.0.6.ds2-3) unstable; urgency=low
+
+  * rebuild against OCaml 3.10
+  * debian/control
+    - adding me as an Uploader
+    - bump Standards-Version to 3.7.2, no changes needed
+    - cdbs, debhelper & co should be build-dep, not -indep
+  * debian/watch
+    - add watch file
+  * debian/rules
+    - use the ocaml.mk CDBS class instead of manually fiddling with 'ocamlc
+      -where' and $(OCAMLABI)
+
+ -- Stefano Zacchiroli <zack@debian.org>  Mon, 10 Sep 2007 09:15:49 +0200
+
 polygen (1.0.6.ds2-2) unstable; urgency=low
 
   * Fixed a bashism in the makefile.  Closes: bug#396902.
