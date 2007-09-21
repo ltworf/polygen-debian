@@ -5,6 +5,7 @@ Maintainer: Enrico Zini <enrico@debian.org>
 Uploaders: Stefano Zacchiroli <zack@debian.org>
 Build-Depends: debhelper (>= 4.0.0), ocaml-nox, cdbs
 Standards-Version: 3.7.2
+Homepage: http://polygen.org/web/index.html
 XS-Vcs-Svn: svn://svn.debian.org/pkg-ocaml-maint/trunk/packages/polygen/trunk
 XS-Vcs-Browser: http://svn.debian.org/wsvn/pkg-ocaml-maint/trunk/packages/polygen/trunk/
 

@@ -1,8 +1,9 @@
 polygen (1.0.6.ds2-4) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * add Homepage field to debian/control
 
- -- Stefano Zacchiroli <zack@debian.org>  Mon, 10 Sep 2007 09:19:40 +0200
+ -- Stefano Zacchiroli <zack@debian.org>  Fri, 21 Sep 2007 14:01:09 +0200
 
 polygen (1.0.6.ds2-3) unstable; urgency=low
 
