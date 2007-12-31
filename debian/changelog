@@ -2,6 +2,7 @@ polygen (1.0.6.ds2-4) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
   * add Homepage field to debian/control
+  * fix vcs-svn field to point just above the debian/ dir
 
  -- Stefano Zacchiroli <zack@debian.org>  Fri, 21 Sep 2007 14:01:09 +0200
 
