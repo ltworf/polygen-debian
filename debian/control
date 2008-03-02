@@ -1,8 +1,8 @@
 Source: polygen
 Section: games
 Priority: optional
-Maintainer: Enrico Zini <enrico@debian.org>
-Uploaders: Stefano Zacchiroli <zack@debian.org>
+Maintainer: Debian OCaml Maintainers <debian-ocaml-maint@lists.debian.org>
+Uploaders: Enrico Zini <enrico@debian.org>, Stefano Zacchiroli <zack@debian.org>
 Build-Depends: debhelper (>= 4.0.0), ocaml-nox, cdbs
 Standards-Version: 3.7.3
 Homepage: http://polygen.org/web/index.html

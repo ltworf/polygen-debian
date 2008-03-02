@@ -1,3 +1,9 @@
+polygen (1.0.6.ds2-5) UNRELEASED; urgency=low
+
+  * set Maintainer to d-o-m, me and Enrico as Uploaders
+
+ -- Stefano Zacchiroli <zack@debian.org>  Sun, 02 Mar 2008 12:25:12 +0100
+
 polygen (1.0.6.ds2-4) unstable; urgency=low
 
   * add Homepage field to debian/control
