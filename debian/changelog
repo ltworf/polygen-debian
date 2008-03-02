@@ -1,16 +1,12 @@
-polygen (1.0.6.ds2-5) UNRELEASED; urgency=low
+polygen (1.0.6.ds2-4) unstable; urgency=medium
 
+  * rebuild with ocaml 3.10.1, bump urgency for the transition
   * set Maintainer to d-o-m, me and Enrico as Uploaders
-
- -- Stefano Zacchiroli <zack@debian.org>  Sun, 02 Mar 2008 12:25:12 +0100
-
-polygen (1.0.6.ds2-4) unstable; urgency=low
-
   * add Homepage field to debian/control
   * fix vcs-svn field to point just above the debian/ dir
   * bump standards-version (no changes needed)
 
- -- Stefano Zacchiroli <zack@debian.org>  Fri, 21 Sep 2007 14:01:09 +0200
+ -- Stefano Zacchiroli <zack@debian.org>  Sun, 02 Mar 2008 12:25:12 +0100
 
 polygen (1.0.6.ds2-3) unstable; urgency=low
 
