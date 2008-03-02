@@ -1,3 +1,9 @@
+polygen (1.0.6.ds2-5) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefano Zacchiroli <zack@debian.org>  Sun, 02 Mar 2008 12:33:21 +0100
+
 polygen (1.0.6.ds2-4) unstable; urgency=medium
 
   * rebuild with ocaml 3.10.1, bump urgency for the transition
