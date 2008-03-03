@@ -60,5 +60,5 @@ install/polygen-data::
 	debian/install-grammars $(POLYGEN_BASE)/grm/fra debian/$(cdbs_curpkg)/usr/share/polygen/fra
 
 clean::
-	rm -f debian/man.grm.o polygen.1 polygen-data.6 debian/polyfind.1
+	rm -f debian/man.grm.o polygen.1 polygen-data.6 debian/polyfind.1 src/polygen
 	find $(POLYGEN_BASE)/grm/ -name \*.grm.o -exec rm "{}" ";"
