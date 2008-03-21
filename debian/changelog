@@ -1,12 +1,10 @@
-polygen (1.0.6.ds2-5) UNRELEASED; urgency=low
-
-  [ Stefano Zacchiroli ]
-  * NOT RELEASED YET
+polygen (1.0.6.ds2-5) unstable; urgency=low
 
   [ Stephane Glondu ]
-  * Fix FTBFS if built twice in a row (Closes: #424323)
+  * rm polygen binary upon clean, fix FTBFS if built twice in a row
+    (Closes: #424323)
 
- -- Stephane Glondu <steph@glondu.net>  Mon, 03 Mar 2008 11:38:29 +0100
+ -- Stefano Zacchiroli <zack@debian.org>  Fri, 21 Mar 2008 16:48:38 +0100
 
 polygen (1.0.6.ds2-4) unstable; urgency=medium
 
