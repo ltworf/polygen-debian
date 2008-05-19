@@ -1,3 +1,10 @@
+polygen (1.0.6.ds2-6) unstable; urgency=low
+
+  * Compiled with OCaml 3.10.2.
+  * Added myself to Uploaders.
+
+ -- Ralf Treinen <treinen@debian.org>  Mon, 19 May 2008 22:47:33 +0200
+
 polygen (1.0.6.ds2-5) unstable; urgency=low
 
   [ Stephane Glondu ]
