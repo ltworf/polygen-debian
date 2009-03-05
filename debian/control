@@ -18,7 +18,10 @@ Vcs-Browser: http://git.debian.org/?p=pkg-ocaml-maint/packages/polygen.git
 
 Package: polygen
 Architecture: all
-Depends: ${shlibs:Depends}, ocaml-base-nox-${F:OCamlABI}
+Depends:
+ ${shlibs:Depends},
+ ocaml-base-nox-${F:OCamlABI},
+ ${misc:Depends}
 Recommends: polygen-data
 Description: generator of random sentences from grammar definitions
  PolyGen is a program for generating random sentences according to a grammar
@@ -44,7 +47,10 @@ Description: generator of random sentences from grammar definitions
 
 Package: polygen-data
 Architecture: all
-Depends: polygen, perl-modules
+Depends:
+ polygen,
+ perl-modules,
+ ${misc:Depends}
 Description: grammar definitions for PolyGen
  PolyGen is a program for generating random sentences according to a grammar
  definition, that is following custom syntactical and lexical rules.
