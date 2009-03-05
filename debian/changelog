@@ -6,6 +6,7 @@ polygen (1.0.6.ds2-7) unstable; urgency=low
   * bump Standards-version to 3.8.0 (no changes needed)
   * debian/rules: use ocaml.mk as a CDBS "rules" snippet
   * debian/control: add missing ${misc:Depends} substvars
+  * debian/copyright: refer to version-ful common license file
   
   [ Stephane Glondu ]
   * Switching packaging to git
