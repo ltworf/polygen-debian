@@ -7,6 +7,7 @@ polygen (1.0.6.ds2-7) unstable; urgency=low
   * debian/rules: use ocaml.mk as a CDBS "rules" snippet
   * debian/control: add missing ${misc:Depends} substvars
   * debian/copyright: refer to version-ful common license file
+  * debian/*postinst: do not ignore script exit code
   
   [ Stephane Glondu ]
   * Switching packaging to git
