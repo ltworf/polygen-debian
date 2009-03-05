@@ -1,5 +1,12 @@
-polygen (1.0.6.ds2-7) UNRELEASED; urgency=low
+polygen (1.0.6.ds2-7) unstable; urgency=low
 
+  [ Stefano Zacchiroli ]
+  * rebuild against OCaml 3.11
+    - add build-dep on dh-ocaml (ships the CDBS rules file)
+  * bump Standards-version to 3.8.0 (no changes needed)
+  * debian/rules: use ocaml.mk as a CDBS "rules" snippet
+  
+  [ Stephane Glondu ]
   * Switching packaging to git
 
  -- Stephane Glondu <steph@glondu.net>  Mon, 11 Aug 2008 23:49:50 +0200
