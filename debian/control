@@ -7,11 +7,11 @@ Uploaders:
  Stefano Zacchiroli <zack@debian.org>,
  Ralf Treinen <treinen@debian.org>
 Build-Depends:
- debhelper (>= 4.0.0),
+ debhelper (>= 5.0.0),
  dh-ocaml,
  ocaml-nox,
  cdbs
-Standards-Version: 3.8.0
+Standards-Version: 3.8.2
 Homepage: http://polygen.org/web/index.html
 Vcs-Git: git://git.debian.org/git/pkg-ocaml-maint/packages/polygen.git
 Vcs-Browser: http://git.debian.org/?p=pkg-ocaml-maint/packages/polygen.git
