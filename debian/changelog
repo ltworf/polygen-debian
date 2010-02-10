@@ -1,3 +1,10 @@
+polygen (1.0.6.ds2-9) unstable; urgency=low
+
+  * rebuild against OCaml 3.11.2
+  * bump Standards-Version to 3.8.4 (no changes needed)
+
+ -- Stefano Zacchiroli <zack@debian.org>  Wed, 10 Feb 2010 10:28:53 +0100
+
 polygen (1.0.6.ds2-8) unstable; urgency=low
 
   * rebuild against OCaml 3.11.1

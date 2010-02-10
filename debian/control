@@ -11,7 +11,7 @@ Build-Depends:
  dh-ocaml,
  ocaml-nox,
  cdbs
-Standards-Version: 3.8.2
+Standards-Version: 3.8.4
 Homepage: http://polygen.org/web/index.html
 Vcs-Git: git://git.debian.org/git/pkg-ocaml-maint/packages/polygen.git
 Vcs-Browser: http://git.debian.org/?p=pkg-ocaml-maint/packages/polygen.git
