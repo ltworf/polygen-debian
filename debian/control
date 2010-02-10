@@ -20,7 +20,7 @@ Package: polygen
 Architecture: all
 Depends:
  ${shlibs:Depends},
- ocaml-base-nox-${F:OCamlABI},
+ ${ocaml:Depends},
  ${misc:Depends}
 Recommends: polygen-data
 Description: generator of random sentences from grammar definitions
