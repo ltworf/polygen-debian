@@ -1,3 +1,10 @@
+polygen (1.0.6.ds2-10) unstable; urgency=low
+
+  * debian/polyrun: terminate Usage message with a newline. Thanks to
+    Chris Lamb for the patch (closes:  #507277).
+
+ -- Ralf Treinen <treinen@debian.org>  Tue, 22 Jun 2010 20:54:20 +0200
+
 polygen (1.0.6.ds2-9) unstable; urgency=low
 
   * rebuild against OCaml 3.11.2

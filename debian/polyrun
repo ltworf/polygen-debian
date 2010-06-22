@@ -64,7 +64,7 @@ if ($scriptname eq 'polyfind')
 	if (@ARGV) {
 		print grmfind($ARGV[0]), "\n";
 	} else {
-		print STDERR "Usage: $scriptname grammar";
+		print STDERR "Usage: $scriptname grammar\n";
 	}
 }
 else
