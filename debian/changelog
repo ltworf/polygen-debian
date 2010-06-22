@@ -1,9 +1,14 @@
 polygen (1.0.6.ds2-10) unstable; urgency=low
 
   * debian/polyrun: terminate Usage message with a newline. Thanks to
-    Chris Lamb for the patch (closes:  #507277).
+    Chris Lamb for the patch (closes: #507277).
+  * debian/control:
+    - put homepage at freshmeat (closes: #517430)
+    - removed Zack from uploaders on his request.
+  * patch 02-grammar-typos.patch: fix a typo in grm/eng/manager.grm
+    (closes: #307619).
 
- -- Ralf Treinen <treinen@debian.org>  Tue, 22 Jun 2010 20:54:20 +0200
+ -- Ralf Treinen <treinen@debian.org>  Tue, 22 Jun 2010 21:17:57 +0200
 
 polygen (1.0.6.ds2-9) unstable; urgency=low
 

@@ -4,7 +4,6 @@ Priority: optional
 Maintainer: Debian OCaml Maintainers <debian-ocaml-maint@lists.debian.org>
 Uploaders:
  Enrico Zini <enrico@debian.org>,
- Stefano Zacchiroli <zack@debian.org>,
  Ralf Treinen <treinen@debian.org>
 Build-Depends:
  debhelper (>= 5.0.0),
@@ -12,7 +11,7 @@ Build-Depends:
  ocaml-nox,
  cdbs
 Standards-Version: 3.8.4
-Homepage: http://polygen.org/web/index.html
+Homepage: http://freshmeat.net/projects/polygen/
 Vcs-Git: git://git.debian.org/git/pkg-ocaml-maint/packages/polygen.git
 Vcs-Browser: http://git.debian.org/?p=pkg-ocaml-maint/packages/polygen.git
 
