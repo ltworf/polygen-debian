@@ -64,7 +64,7 @@ All of these grammars output all sort of strange and out\-of\-control things.
 No personal, racial, societal slurs are intended.  For amusement only.
 .P
 You can find out more information about a grammar with the command
-.B polygen -info \fIgrammar\fP
+.B polygen \-info \fIgrammar\fP
 };
 
 my %langnames = (
@@ -108,5 +108,5 @@ polygen(1)
 Polygen has been written by Manta.
 .P
 These grammars have been written by various contributors.  Run \fBpolygen
--info\fP \fIgrammar\fP to see informations about their authors.
+\-info\fP \fIgrammar\fP for information about their authors.
 };
