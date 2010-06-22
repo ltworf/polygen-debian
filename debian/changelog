@@ -8,7 +8,7 @@ polygen (1.0.6.ds2-10) unstable; urgency=low
   * patch 02-grammar-typos.patch: fix a typo in grm/eng/manager.grm
     (closes: #307619).
   * Install executables in /usr/games instead of /usr/bin.
-  * debian/watch: desactivate since url of download page dead
+  * debian/watch: deactivate since url of download page dead
   * add debian/source/format, value is 1.0
   * debian/make_polygen_data-manpage: escape some hyphens, and fix a
     typo in the generated manpage.
