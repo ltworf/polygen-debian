@@ -44,7 +44,7 @@ build/polygen::
 	find $(POLYGEN_BASE)/grm/ -name \*.grm | debian/make_polygen-data_manpage > polygen-data.6
 
 install/polygen::
-	install -o root -g root -m 755 $(POLYGEN) debian/$(cdbs_curpkg)/usr/bin/
+	install -o root -g root -m 755 $(POLYGEN) debian/$(cdbs_curpkg)/usr/games/
 	install -o root -g root -m 755 -d debian/$(cdbs_curpkg)/usr/share/doc/polygen
 	install -o root -g root -m 644 $(POLYGEN_BASE)/eng/HOWTO-Refman.html debian/$(cdbs_curpkg)/usr/share/doc/polygen/HOWTO-Refman.en.html
 	install -o root -g root -m 644 $(POLYGEN_BASE)/ita/HOWTO-Refman.html debian/$(cdbs_curpkg)/usr/share/doc/polygen/HOWTO-Refman.it.html
@@ -53,7 +53,7 @@ install/polygen::
 
 install/polygen-data::
 	# grammar data files
-	install -o root -g root -m 755 debian/polyrun debian/$(cdbs_curpkg)/usr/bin/
+	install -o root -g root -m 755 debian/polyrun debian/$(cdbs_curpkg)/usr/games/
 	chmod 0755 debian/install-grammars
 	debian/install-grammars $(POLYGEN_BASE)/grm/ita debian/$(cdbs_curpkg)/usr/share/polygen/ita
 	debian/install-grammars $(POLYGEN_BASE)/grm/eng debian/$(cdbs_curpkg)/usr/share/polygen/eng
