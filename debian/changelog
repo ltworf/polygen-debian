@@ -1,3 +1,9 @@
+polygen (1.0.6.ds2-11) UNRELEASED; urgency=low
+
+  * added debian/gbp.conf: enforce pristine-tar
+
+ -- Ralf Treinen <treinen@debian.org>  Wed, 23 Jun 2010 20:46:05 +0200
+
 polygen (1.0.6.ds2-10) unstable; urgency=low
 
   * debian/polyrun: terminate Usage message with a newline. Thanks to
