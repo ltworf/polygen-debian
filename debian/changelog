@@ -1,8 +1,9 @@
 polygen (1.0.6.ds2-11) UNRELEASED; urgency=low
 
   * added debian/gbp.conf: enforce pristine-tar
+  * Standards-Version 3.9.1 (no change)
 
- -- Ralf Treinen <treinen@debian.org>  Wed, 23 Jun 2010 20:46:05 +0200
+ -- Ralf Treinen <treinen@debian.org>  Wed, 16 Feb 2011 20:49:32 +0100
 
 polygen (1.0.6.ds2-10) unstable; urgency=low
 
