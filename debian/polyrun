@@ -57,6 +57,50 @@ sub grmfind ($)
 	return undef;
 }
 
+# Compute grammar tab completions
+sub grmcomplete ($)
+{
+	my $start = shift || "";
+	my %dirs;
+
+	# Scan all files, grouping them by grammar name
+	find({wanted => sub {
+			my $basename = $_;
+			$basename =~ s/.+\///;
+			push @{$dirs{$basename}}, $File::Find::name if (/\.grm$/);
+		},
+		no_chdir => 1,
+	}, '/usr/share/polygen');
+
+	# Build the unambiguous list
+	my @res;
+
+	for my $name (keys %dirs)
+	{
+		push @res, $name;
+		if (@{$dirs{$name}} > 1)
+		{
+			for my $pn (@{$dirs{$name}})
+			{
+				push @res, substr($pn, 19);
+			}
+		}
+	}
+
+	@res = sort @res;
+
+	for my $line (@res)
+	{
+		print $line, "\n" if (substr($line, 0, length($start)) eq $start);
+	}
+}
+
+if (@ARGV && $ARGV[0] eq '--complete')
+{
+	grmcomplete($ARGV[1]);
+	exit 0;
+}
+
 my $scriptname = basename($0);
 
 if ($scriptname eq 'polyfind')
