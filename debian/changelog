@@ -1,3 +1,10 @@
+polygen (1.0.6.ds2-12) unstable; urgency=low
+
+  * Team upload
+  * Recompile with ocaml 3.12.1 (no source changes)
+
+ -- Stéphane Glondu <glondu@debian.org>  Tue, 01 Nov 2011 21:26:40 +0100
+
 polygen (1.0.6.ds2-11) unstable; urgency=low
 
   * added debian/gbp.conf: enforce pristine-tar
@@ -19,7 +26,7 @@ polygen (1.0.6.ds2-10) unstable; urgency=low
   * add debian/source/format, value is 1.0
   * debian/make_polygen_data-manpage: escape some hyphens, and fix a
     typo in the generated manpage.
-  
+
  -- Ralf Treinen <treinen@debian.org>  Tue, 22 Jun 2010 21:52:33 +0200
 
 polygen (1.0.6.ds2-9) unstable; urgency=low
@@ -48,7 +55,7 @@ polygen (1.0.6.ds2-7) unstable; urgency=low
   * debian/control: add missing ${misc:Depends} substvars
   * debian/copyright: refer to version-ful common license file
   * debian/*postinst: do not ignore script exit code
-  
+
   [ Stephane Glondu ]
   * Switching packaging to git
 
