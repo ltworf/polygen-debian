@@ -48,7 +48,7 @@ Package: polygen-data
 Architecture: all
 Depends:
  polygen,
- perl-modules,
+ perl,
  ${misc:Depends}
 Description: grammar definitions for PolyGen
  PolyGen is a program for generating random sentences according to a grammar

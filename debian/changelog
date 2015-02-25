@@ -1,3 +1,12 @@
+polygen (1.0.6.ds2-13.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Fix "depend on perl instead of perl-modules":
+    debian/control: update Depends for polygen-data.
+    (Closes: #779115)
+
+ -- gregor herrmann <gregoa@debian.org>  Wed, 25 Feb 2015 22:13:25 +0100
+
 polygen (1.0.6.ds2-13) unstable; urgency=low
 
   * Standards-Version 3.9.5 (no change)
