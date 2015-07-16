@@ -1,3 +1,12 @@
+polygen (1.0.6.ds2-14) UNRELEASED; urgency=medium
+
+  * Team upload.
+  * Acknowledge NMU.
+  * Make build reproducible (Closes: #776576). Thanks to Chris Lamb for
+    the patch.
+
+ -- Mehdi Dogguy <mehdi@debian.org>  Thu, 16 Jul 2015 18:49:47 +0000
+
 polygen (1.0.6.ds2-13.1) unstable; urgency=medium
 
   * Non-maintainer upload.
