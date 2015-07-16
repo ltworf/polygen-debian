@@ -4,6 +4,7 @@ polygen (1.0.6.ds2-14) UNRELEASED; urgency=medium
   * Acknowledge NMU.
   * Make build reproducible (Closes: #776576). Thanks to Chris Lamb for
     the patch.
+  * Fix typo in manpage (Closes: #776573).
 
  -- Mehdi Dogguy <mehdi@debian.org>  Thu, 16 Jul 2015 18:49:47 +0000
 

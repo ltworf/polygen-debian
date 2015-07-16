@@ -1,0 +1,33 @@
+--- a/debian/man.grm
++++ b/debian/man.grm
+@@ -55,7 +55,7 @@ Description ::=   ShortDesc "\n.PP\n"
+ 		^ "\n.PP\n"
+ 		^ "Here a source program is a grammar definition, the execution consists in the exploration of such grammar by selecting a random path and the result is the sentence built on the way."
+ 		^ "\n.PP\n"
+-		^ "Though PolyGen is quite a seriuos piece of software then, what else would be more noble for it than being used as a parody tool for linguistical habits, stereotypes and trends of this foolish era?"
++		^ "Though PolyGen is quite a serious piece of software then, what else would be more noble for it than being used as a parody tool for linguistical habits, stereotypes and trends of this foolish era?"
+ 		^ "\n.PP\n"
+ 	  	^ "Principles of parody are focusing a ridiculous topic and eventually abstracting its rules and schemes (here in terms of a grammar definition) by which reproducing it through the variatio device."
+ 		^ "\n.PP\n"
+--- a/grm/eng/man.grm
++++ b/grm/eng/man.grm
+@@ -52,7 +52,7 @@ Description ::=   ShortDesc "\n.PP\n"
+ 		^ "\n.PP\n"
+ 		^ "Here a source program is a grammar definition, the execution consists in the exploration of such grammar by selecting a random path and the result is the sentence built on the way."
+ 		^ "\n.PP\n"
+-		^ "Though PolyGen is quite a seriuos piece of software then, what else would be more noble for it than being used as a parody tool for linguistical habits, stereotypes and trends of this foolish era?"
++		^ "Though PolyGen is quite a serious piece of software then, what else would be more noble for it than being used as a parody tool for linguistical habits, stereotypes and trends of this foolish era?"
+ 		^ "\n.PP\n"
+ 	  	^ "Principles of parody are focusing a ridiculous topic and eventually abstracting its rules and schemes (here in terms of a grammar definition) by which reproducing it through the variatio device."
+ 		^ "\n.PP\n"
+--- a/grm/ita/man.grm
++++ b/grm/ita/man.grm
+@@ -52,7 +52,7 @@ Description ::=   ShortDesc "\n.PP\n"
+ 		^ "\n.PP\n"
+ 		^ "Here a source program is a grammar definition, the execution consists in the exploration of such grammar by selecting a random path and the result is the sentence built on the way."
+ 		^ "\n.PP\n"
+-		^ "Though PolyGen is quite a seriuos piece of software then, what else would be more noble for it than being used as a parody tool for linguistical habits, stereotypes and trends of this foolish era?"
++		^ "Though PolyGen is quite a serious piece of software then, what else would be more noble for it than being used as a parody tool for linguistical habits, stereotypes and trends of this foolish era?"
+ 		^ "\n.PP\n"
+ 	  	^ "Principles of parody are focusing a ridiculous topic and eventually abstracting its rules and schemes (here in terms of a grammar definition) by which reproducing it through the variatio device."
+ 		^ "\n.PP\n"
