@@ -1,4 +1,4 @@
-polygen (1.0.6.ds2-14) UNRELEASED; urgency=medium
+polygen (1.0.6.ds2-14) unstable; urgency=medium
 
   * Team upload.
   * Acknowledge NMU.
@@ -6,7 +6,7 @@ polygen (1.0.6.ds2-14) UNRELEASED; urgency=medium
     the patch.
   * Fix typo in manpage (Closes: #776573).
 
- -- Mehdi Dogguy <mehdi@debian.org>  Thu, 16 Jul 2015 18:49:47 +0000
+ -- Mehdi Dogguy <mehdi@debian.org>  Sat, 10 Oct 2015 18:37:42 +0200
 
 polygen (1.0.6.ds2-13.1) unstable; urgency=medium
 
