@@ -1,3 +1,13 @@
+polygen (1.0.6.ds2-15) testing; urgency=low
+
+  * Changed maintainer
+  * Bumped Standards-Version to 3.9.8
+  * Changed homepage to http://polygen.org/
+  * Bumped compat to 9
+  * Changed git URLs
+
+ -- Salvo 'LtWorf' Tomaselli <tiposchi@tiscali.it>  Sun, 30 Oct 2016 15:33:00 +0100
+
 polygen (1.0.6.ds2-14) unstable; urgency=medium
 
   * Team upload.

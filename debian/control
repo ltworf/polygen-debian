@@ -1,19 +1,16 @@
 Source: polygen
 Section: games
 Priority: optional
-Maintainer: Debian OCaml Maintainers <debian-ocaml-maint@lists.debian.org>
-Uploaders:
- Enrico Zini <enrico@debian.org>,
- Ralf Treinen <treinen@debian.org>
+Maintainer: Salvo 'LtWorf' Tomaselli <tiposchi@tiscali.it>
 Build-Depends:
- debhelper (>= 5.0.0),
+ debhelper (>= 9.0.0),
  dh-ocaml,
  ocaml-nox,
  cdbs
-Standards-Version: 3.9.5
-Homepage: http://freshmeat.net/projects/polygen/
-Vcs-Git: git://git.debian.org/git/pkg-ocaml-maint/packages/polygen.git
-Vcs-Browser: http://git.debian.org/?p=pkg-ocaml-maint/packages/polygen.git
+Standards-Version: 3.9.8
+Homepage: http://polygen.org/
+Vcs-Git: https://github.com/ltworf/polygen-debian.git
+Vcs-Browser: https://github.com/ltworf/polygen-debian
 
 Package: polygen
 Architecture: all
