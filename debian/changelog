@@ -1,4 +1,4 @@
-polygen (1.0.6.ds2-15) testing; urgency=low
+polygen (1.0.6.ds2-15) unstable; urgency=low
 
   * Changed maintainer
   * Bumped Standards-Version to 3.9.8
