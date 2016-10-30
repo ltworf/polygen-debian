@@ -1,6 +1,6 @@
 polygen (1.0.6.ds2-15) unstable; urgency=low
 
-  * Changed maintainer
+  * Changed maintainer (Closes: #813212)
   * Bumped Standards-Version to 3.9.8
   * Changed homepage to http://polygen.org/
   * Bumped compat to 9
