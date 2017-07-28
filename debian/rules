@@ -7,7 +7,7 @@ include /usr/share/cdbs/1/rules/ocaml.mk
 POLYGEN_BASE=.
 DEB_BUILDDIR=$(POLYGEN_BASE)/src
 POLYGEN_BIN=$(DEB_BUILDDIR)/polygen
-POLYGEN_SEED = $(shell date --date="$(shell dpkg-parsechangelog --show-field Date)" +%s)
+POLYGEN_SEED = $(shell expr $(shell date --date="$(shell dpkg-parsechangelog --show-field Date)" +%s) % 1073741823)
 POLYGEN=$(POLYGEN_BIN) -seed $(POLYGEN_SEED)
 export POLYGEN
 
