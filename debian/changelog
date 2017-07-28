@@ -1,4 +1,4 @@
-polygen (1.0.6.ds2-16) UNRELEASED; urgency=medium
+polygen (1.0.6.ds2-16) unstable; urgency=medium
 
   * Change POLYGEN_SEED in d/rules (Closes: #860384). Thanks to Chris Lamb.
   * Compile on OCaml 4.05.0 (Closes: #868938). Thanks to Stéphane Glondu.
