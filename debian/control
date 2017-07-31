@@ -3,7 +3,7 @@ Section: games
 Priority: optional
 Maintainer: Salvo 'LtWorf' Tomaselli <tiposchi@tiscali.it>
 Build-Depends:
- debhelper (>= 9.0.0),
+ debhelper (>= 10.0.0),
  dh-ocaml,
  ocaml-nox,
  cdbs
