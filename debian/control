@@ -7,7 +7,7 @@ Build-Depends:
  dh-ocaml,
  ocaml-nox,
  cdbs
-Standards-Version: 4.0.0
+Standards-Version: 4.1.0
 Homepage: http://polygen.org/
 Vcs-Git: https://github.com/ltworf/polygen-debian.git
 Vcs-Browser: https://github.com/ltworf/polygen-debian

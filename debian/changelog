@@ -1,7 +1,8 @@
-polygen (1.0.6.ds2-18) UNRELEASED; urgency=medium
+polygen (1.0.6.ds2-18) unstable; urgency=medium
 
   * Bump compat to 10
-  * Bump Standards-Version to 4.0.0
+  * Bump Standards-Version to 4.1.0
+  * Rebuild with new OCaml
 
  -- Salvo 'LtWorf' Tomaselli <tiposchi@tiscali.it>  Mon, 31 Jul 2017 15:27:45 +0200
 
